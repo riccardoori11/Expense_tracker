@@ -1,8 +1,8 @@
-const express = require('express');
+var express = require('express');
 const path = require('path');
 const app = express();
 
-// Serve static files from the "static" directory
+// USING STATIC FODLER DIRECTORY WHICH HAS MY CSS
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
 // Serve the HTML file
